@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Feedback</h1>
+    <div>Please give me your comments</div>
+
+    <form action="">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name">
+        <!--the for focuses on id-->
+        <br>
+
+        <label for="email">Your Email</label>
+        <input type="text" name="email" id="email">
+        <br>
+
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" placeholder="input your age">
+        <br>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Gay">Gay</option>
+            <option value="Lesbian">Lesbian</option>
+            <option value="Dont want to talk">Dont want to talk</option>
+        </select>
+        <br>
+
+        <label for="rating">Give your rating</label>
+        <input type="radio" name="rating1" id="good" value="good"> Good
+        <input type="radio" name="rating1" id="bad" value="bad"> Bad
+        <br>
+        
+        <label for="comment">Comments</label>
+        <textarea name="comment1" id="comment" cols="30" rows="10"></textarea>
+        <br>
+
+        <button>Send</button>
+    </form>
+</body>
+
+</html>
