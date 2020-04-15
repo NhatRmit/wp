@@ -1,41 +1,296 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment 2</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2</title>
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link id="stylecss" type="text/css" rel="stylesheet" href="style.css">
+  <script src='../wireframe.js'></script>
+</head>
+
+<body>
+  <br>
+  <header>
+    <div class="jumbotron text-center bg-warning text-danger" id="jumbotronlogo">
+      <img class="logo" src="D:\wp-master\a2\media\Logo-02.png" alt="company logo">
+      <h1>RMAXXX</h1>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nowshowing">Now Showing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prices">Prices</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <main>
+    <div class="jumbotron text-center">
+      <h3 id="aboutus">About Us Section</h3>
+    </div>
+    <div style=" background-color: burlywood;">
+      <h3 style="text-align:center;">Dolby in the Cinema </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX cinema has the projection and the sound systems upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
+        Dolby Version is in the town waiting for you to serve you with extremely different experience in the cinema. Do not miss out !</p>
+    </div>
+    <div class="para"></div> 
+    <div style=" background-color: burlywood;">
+      <h3 style="text-align:center;">New Seats </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX has new seat to serve you the most comfortable with our new chair.
+      Especially, RMAXXX now has first-class seat in the royal cinema with the chair that you can lie and enjoy.</p>
+    </div>
+    <div class="paral"></div>
+    <div style=" background-color: burlywood;">
+      <h3 style="text-align:center;">Dolby in the Cinema </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX cinema has the projection and the sound systems upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
+        Dolby Version is in the town waiting for you to serve you with extremely different experience in the cinema. Do not miss out !</p>
+    </div>
+    <div class="parallax"></div>
     
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
-    <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
+    <br>
 
-    <script src='../wireframe.js'></script>
-  </head>
+    <div class="jumbotron text-center">
+      <h3 id="nowshowing">Now Showing Section</h3>
+    </div>
 
-  <body>
+    <div id="moviesection" class="container bg-info">
 
-    <header>
-      <div>Put company logo and name here</div>
-    </header>
+      <div class="row">
+        <div class="col-md-3">
+          <div id="trailerbutton" class="container">
+            <img class="image" src="D:\wp-master\a2\media\endgame.jpg" alt="endgame poster">
+            <img class="rating" src="D:\wp-master\a2\media\18.png" width="20%" alt="r-18">
+            <div class="middle">
+              <a id="link" href="https://www.youtube.com/watch?v=ggISrFwe3KE">Trailer</a>
+            </div>
+            <div id="ticketbutton" class="middle">
+              <a id="link" href="#buyticket">Ticket</a>
+            </div>
+          </div>
+        </div>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+        <div class="col-md-3">
+          <div id="schedule" class="container text-center">
+            <h3>The Advengers: Endgame</h3>
+            <table class="table table-sm table-warning table-striped">
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>9PM</td>
+              </tr>
+              <tr>
+                <td>Thurs</td>
+                <td>9PM</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>9PM</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>12PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </main>
+        <div class="col-md-3">
+          <div id="trailerbutton" class="container">
+            <img class="image" src="D:\wp-master\a2\media\the end wedding.jpg" alt="wedding poster">
+            <div class="middle">
+              <a id="link" href="https://www.youtube.com/watch?v=uoDBvGF9pPU&t=1s">Trailer</a>
+            </div>
+            <div id="ticketbutton" class="middle">
+              <a id="link" href="#buyticket">Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="schedule" class="container text-center">
+            <h3>Top End Wedding</h3><br>
+            <table class="table table-sm table-warning table-striped">
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>6PM</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td>6PM</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>3PM</td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>3PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-      <div>&copy;<script>
+      <div class="row">
+        <div class="col-md-3">
+          <div id="trailerbutton" class="container">
+            <img class="image" src="D:\wp-master\a2\media\dumbo.jpg" alt="dumbo poster">
+            <div class="middle">
+              <a id="link" href="https://www.youtube.com/watch?v=7NiYVoqBt-8">Trailer</a>
+            </div>
+            <div id="ticketbutton" class="middle">
+              <a id="link" href="#buyticket">Ticket</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div id="schedule" class="container text-center">
+            <h3>Dumbo</h3><br>
+            <table class="table table-sm table-warning table-striped">
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>6PM</td>
+              </tr>
+              <tr>
+                <td>Thurs</td>
+                <td>6PM</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>6PM</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>12PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div id="trailerbutton" class="container">
+            <img class="image" src="D:\wp-master\a2\media\the happy prince.jpg" alt="happy pirnce poster">
+            <div class="middle">
+              <a id="link" href="https://www.youtube.com/watch?v=ggISrFwe3KE">Trailer</a>
+            </div>
+            <div id="ticketbutton" class="middle">
+              <a id="link" href="#buyticket">Ticket</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div id="schedule" class="container text-center">
+            <h3>The Happy Prince</h3><br>
+            <table class="table table-sm  table-warning table-striped">
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Thurs</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>12PM</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>9PM</td>
+              </tr>
+              <tr>
+                <td>Sun</td>
+                <td>9PM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <div class="jumbotron text-center">
+      <h3 id="nowshowing">Synopsis Area</h3>
+    </div>
+    <br>
+    <div class="jumbotron text-center">
+      <h3 id="prices">Prices</h3>
+    </div>
+
+    <article id='Website Under Construction'>
+      <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
+      <img src='' alt='Website Under Construction' />
+    </article>
+  </main>
+
+  <footer>
+    <div>&copy;
+      <script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
+      </script> Put your name(s), student number(s) and group name here. Last modified
+      <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+    <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
+      Programming course at RMIT University in Melbourne, Australia.</div>
+    <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
+
