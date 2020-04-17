@@ -176,7 +176,6 @@ html{
 }
  #PriceTable td, #PriceTable th{
     text-align: center;
-    padding-bottom: 2%;
     margin: 0px auto;
     width: 50%;
     float: none;
@@ -196,5 +195,5 @@ html{
 }
 #booking{
     margin: 0px auto;
-    width: 50%;
+    width: 60%;
 }
