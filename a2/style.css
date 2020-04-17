@@ -176,10 +176,11 @@ html{
 }
  #PriceTable td, #PriceTable th{
     text-align: center;
+    padding-bottom: 1%;
     margin: 0px auto;
     width: 50%;
     float: none;
-    font-size:25px;
+    font-size:20px;
  }
 #hotmovie{
     text-align: center;
@@ -195,5 +196,5 @@ html{
 }
 #booking{
     margin: 0px auto;
-    width: 60%;
+    width: 100%;
 }
