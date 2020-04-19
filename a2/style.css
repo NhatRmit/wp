@@ -1,11 +1,22 @@
-/* Insert your styles here */
-
-/* Insert your styles here */
+/* Smoothing Scrolling */
 
 html{
     scroll-behavior: smooth;
 }
 
+#brand{
+    font: 80px Georgia, serif;
+}
+
+#title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(255, 252, 55);
+}
+
+#section {
+    color: rgb(248, 152, 7);
+}
+/* Parallax Scrolling Effect */
 .para {
     
     background-image: url(media/soon.jpg);
@@ -64,6 +75,7 @@ html{
     padding-right: 0%;
     padding-top: 0%;
     padding-bottom: 0%;
+    
 }
 
 .logo {
@@ -100,6 +112,7 @@ html{
 
 #moviesection {
     padding-bottom: 2%;
+    padding-left: 2%;
 }
 
 .container #trailerbutton {
@@ -118,7 +131,7 @@ html{
 }
 
   
-  .image {
+.image {
     opacity: 1;
     display: block;
     width: 100%;
@@ -174,6 +187,12 @@ html{
     position: absolute;
     top: 0%;
 }
+
+#moviename {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
  #PriceTable td, #PriceTable th{
     text-align: center;
     padding-bottom: 1%;
@@ -192,9 +211,11 @@ html{
 }
 #trailer{
    margin: 0px auto;
-   width: 800px;
+   width: 90%;
 }
-#booking{
-    margin: 0px auto;
-    width: 30%;
+
+#poster {
+    width: 50%;
+    height: 50%;
 }
+
