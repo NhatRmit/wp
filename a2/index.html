@@ -24,11 +24,12 @@
   <header>
     <div class="jumbotron text-center bg-warning text-danger" id="jumbotronlogo">
       <img class="logo" src="media/Logo-02.png" alt="company logo">
-      <h1>RMAXXX</h1>
+      <h1 id="brand">RMAXXX</h1>
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top"
+    style="font: 30px Monospace; font-weight: bold;">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
       <span class="navbar-toggler-icon"></span>
@@ -50,32 +51,42 @@
   </nav>
   <br>
   <main>
-    <div class="jumbotron text-center">
-      <h3 id="aboutus">About Us Section</h3>
+    <div id="section" class="jumbotron text-center">
+      <h2 id="aboutus">ABOUT US SECTION</h2>
     </div>
+
+    <!--Parallax Scrolling Effect-->
+
     <div style=" background-color: burlywood;">
-      <h3 style="text-align:center;">Welcome back to RMAXXX </h3>
-      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX cinema can not wait anymore to serve you with our new
-      upgrades to let you have the most wonderful time watching movies ! </p>
+      <h3 id="title" style="text-align:center;">Welcome Back To RMAXXX </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%; text-align: center; font-size: 25px;">RMAXXX
+        cinema can not wait anymore to serve
+        you with our new
+        upgrades to let you have the most wonderful time watching movies ! </p>
     </div>
-    <div class="para"></div> 
+    <div class="para"></div>
     <div style=" background-color: burlywood;">
-      <h3 style="text-align:center;">New Seats </h3>
-      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX has new seat to serve you the most comfortable with our new chair.
-      Especially, RMAXXX now has first-class seat in the royal cinema with the chair that you can lie and enjoy.</p>
+      <h3 id="title" style="text-align:center;">New Seats </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%; text-align: center; font-size: 25px;">RMAXXX
+        has new seat to serve you the most
+        comfortable with our new chair.
+        Especially, RMAXXX now has first-class seat in the royal cinema with the chair that you can lie and enjoy.</p>
     </div>
     <div class="paral"></div>
     <div style=" background-color: burlywood;">
-      <h3 style="text-align:center;">Dolby in the Cinema </h3>
-      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%;">RMAXXX cinema has the projection and the sound systems upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
-        Dolby Version is in the town waiting for you to serve you with extremely different experience in the cinema. Do not miss out !</p>
+      <h3 id="title" style="text-align:center;">Dolby In Cinema </h3>
+      <p style="padding-left:50px; padding-right: 50px; margin-bottom: 0%; text-align: center; font-size: 25px;">RMAXXX
+        cinema has the projection and the
+        sound systems upgraded with 3D Dolby Vision projection and Dolby Atmos sound.
+        Dolby Version is in the town waiting for you to serve you with extremely different experience in the cinema. Do
+        not miss out !</p>
     </div>
     <div class="parallax"></div>
-    
+
     <br>
 
-    <div class="jumbotron text-center">
-      <h3 id="nowshowing">Now Showing Section</h3>
+    <div id="section" class="jumbotron text-center">
+      <h2 id="nowshowing">NOW SHOWING SECTION</h2>
     </div>
 
     <div id="moviesection" class="container bg-info">
@@ -84,9 +95,9 @@
         <div class="col-md-3">
           <div id="trailerbutton" class="container">
             <img class="image" src="media/endgame.jpg" alt="endgame poster">
-            <img class="rating" src="media/18.png" width="20%" alt="r-18">
+            <img class="rating" src="media/13.png" width="15%" alt="rating PG-13">
             <div class="middle">
-              <a id="link" href="https://www.youtube.com/watch?v=ggISrFwe3KE">Trailer</a>
+              <a id="link" href="https://www.youtube.com/watch?v=TcMBFSGVi1c">Trailer</a>
             </div>
             <div id="ticketbutton" class="middle">
               <a id="link" href="#buyticket">Ticket</a>
@@ -96,7 +107,7 @@
 
         <div class="col-md-3">
           <div id="schedule" class="container text-center">
-            <h3>The Advengers: Endgame</h3>
+            <h3 id="moviename">The Advengers: Endgame</h3>
             <table class="table table-sm table-warning table-striped">
               <tr>
                 <th>Day</th>
@@ -126,9 +137,11 @@
           </div>
         </div>
 
+
         <div class="col-md-3">
           <div id="trailerbutton" class="container">
             <img class="image" src="media/the end wedding.jpg" alt="wedding poster">
+            <img class="rating" src="media/M.png" width="15%" alt="rating M">
             <div class="middle">
               <a id="link" href="https://www.youtube.com/watch?v=uoDBvGF9pPU&t=1s">Trailer</a>
             </div>
@@ -139,7 +152,7 @@
         </div>
         <div class="col-md-3">
           <div id="schedule" class="container text-center">
-            <h3>Top End Wedding</h3><br>
+            <h3 id="moviename">Top End Wedding</h3><br>
             <table class="table table-sm table-warning table-striped">
               <tr>
                 <th>Day</th>
@@ -170,6 +183,7 @@
         <div class="col-md-3">
           <div id="trailerbutton" class="container">
             <img class="image" src="media/dumbo.jpg" alt="dumbo poster">
+            <img class="rating" src="media/13.png" width="15%" alt="rating PG-13">
             <div class="middle">
               <a id="link" href="https://www.youtube.com/watch?v=7NiYVoqBt-8">Trailer</a>
             </div>
@@ -181,7 +195,7 @@
 
         <div class="col-md-3">
           <div id="schedule" class="container text-center">
-            <h3>Dumbo</h3><br>
+            <h3 id="moviename">Dumbo</h3><br>
             <table class="table table-sm table-warning table-striped">
               <tr>
                 <th>Day</th>
@@ -222,6 +236,7 @@
         <div class="col-md-3">
           <div id="trailerbutton" class="container">
             <img class="image" src="media/the happy prince.jpg" alt="happy pirnce poster">
+            <img class="rating" src="media/R.png" width="15%" alt="rating R">
             <div class="middle">
               <a id="link" href="https://www.youtube.com/watch?v=ggISrFwe3KE">Trailer</a>
             </div>
@@ -233,7 +248,7 @@
 
         <div class="col-md-3">
           <div id="schedule" class="container text-center">
-            <h3>The Happy Prince</h3><br>
+            <h3 id="moviename">The Happy Prince</h3><br>
             <table class="table table-sm  table-warning table-striped">
               <tr>
                 <th>Day</th>
@@ -266,111 +281,117 @@
       </div>
     </div>
     <br>
-    <div class="jumbotron text-center">
-      <h3 id="nowshowing">Synopsis Area</h3>
-          <div class="container-fluid">
-        <div class="card-deck">
-            <div id="sypnosis">
-                <table class="table table-sm table-warning table-striped" id="hotmovie">
-                    <tr>
-                        <th> <h1  style="font-size: 40;">Avengers: Endgame</h1> <br> <br></th>
-                        <th> <h2 style="font-size: 40;">PG-13</h2> <br> <br></th>
-                    </tr>
-                    <tr>
-                        <td style="width: 20%;" colspan="2">
-                            <h3 style="font-size: 25;">Plot description:</h3>
-        
-                                <span style="font-size: 22;">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.
-                                </span>
-                        </td>
-                    </table>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="Trailer Video" id="trailer" >
-                                <iframe width="800" height="450" src="https://www.youtube.com/embed/TcMBFSGVi1c"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-    <br>
-    <br>
-                   <table id="booking">
-                        <th style="padding-right: 12px;">Make a booking:</th>
-                        <td><Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                            <Span><button>Day-Hour</button></Span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        </div>
-    </div>
-    <br>
-    <div class="jumbotron text-center">
-      <h3 id="prices">Prices</h3>
-    </div>
-    <div class = "PriceSection"> 
-        <table class ="table table-sm table-warning table-striped" id="PriceTable" >
-            <thread>
-            <tr>
-                <th>Seat Type</th>
-                <th>Seat Code</th>
-                <th>All day Monday and Wednesday AND 12pm on Weekdays</th>
-                <th>All other times</th>
-            </tr>
-            </thread>
-            <tbody>
-            <tr>
-                <td>Standard Adult</td>
-                <td>STA</td>
-                <td>14.00</td>
-                <td>19.80</td>
-            </tr>
-            <tr>
-                <td>Standard Concession</td>
-                <td>STP</td>
-                <td>12.50</td>
-                <td>17.50</td>
-            </tr>
-            <tr>
-                <td>Standard Child</td>
-                <td>STC</td>
-                <td>11.00</td>
-                <td>15.30</td>
-            </tr>
-            <tr>
-                <td>First Class Adult</td>
-                <td>FCA</td>
-                <td>24.00</td>
-                <td>30.00</td>
-            </tr>
-            <tr>
-                <td>First Class Concession</td>
-                <td>FCP</td>
-                <td>22.50</td>
-                <td>27.00</td>
-            </tr>
-            <tr>
-                <td>First Class Child</td>
-                <td>FCC</td>
-                <td>21.00</td>
-                <td>24.00</td>
-            </tr>
-            </tbody>
-        </table>
+    <div id="section" class="jumbotron text-center">
+      <h2 id="nowshowing">SYNOPSIS AREA</h2>
     </div>
 
-    <article id='Website Under Construction'>
+    <div class="container-fluid">
+      <div class="card-deck">
+        <div id="sypnosis">
+          <table class="table table-sm table-warning table-borderless" id="hotmovie">
+            <tr>
+              <th>
+                <h1 style="font-size: 40; text-align: center;">Avengers: Endgame</h1>
+                <div id="trailerbutton" class="container">
+                  <img id="poster" src="media/endgame13.png" alt="endgame poster" width="70%">
+                  <br>
+              </th>
+              <th>
+                <h1 style="font-size: 40; text-align: center;">Official
+                  Trailer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                <br>
+                <div class="embed-responsive embed-responsive-16by9" id="trailer" style="align-content:center;">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </tr>
+            <tr>
+              <td style="width: 20%;" colspan="2">
+                <h2 style="font-size: 35;">Plot description:</h2>
+
+                <p style="font-size: 50;">Adrift in space with no food or water, Tony Stark sends a message to Pepper
+                  Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black
+                  Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished
+                  allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the
+                  universe.
+                </p>
+              </td>
+            <tr>
+              <th style="font-size: 20px;">Make a booking:</th>
+              <td>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+                <Span><button>Day-Hour</button></Span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="section" class="jumbotron text-center">
+      <h2 id="prices">PRICES</h2>
+    </div>
+    <div class="PriceSection">
+      <table class="table table-sm table-warning table-striped" id="PriceTable">
+        <thread>
+          <tr>
+            <th>Seat Type</th>
+            <th>Seat Code</th>
+            <th>All day Monday and Wednesday AND 12pm on Weekdays</th>
+            <th>All other times</th>
+          </tr>
+        </thread>
+        <tbody>
+          <tr>
+            <td>Standard Adult</td>
+            <td>STA</td>
+            <td>14.00</td>
+            <td>19.80</td>
+          </tr>
+          <tr>
+            <td>Standard Concession</td>
+            <td>STP</td>
+            <td>12.50</td>
+            <td>17.50</td>
+          </tr>
+          <tr>
+            <td>Standard Child</td>
+            <td>STC</td>
+            <td>11.00</td>
+            <td>15.30</td>
+          </tr>
+          <tr>
+            <td>First Class Adult</td>
+            <td>FCA</td>
+            <td>24.00</td>
+            <td>30.00</td>
+          </tr>
+          <tr>
+            <td>First Class Concession</td>
+            <td>FCP</td>
+            <td>22.50</td>
+            <td>27.00</td>
+          </tr>
+          <tr>
+            <td>First Class Child</td>
+            <td>FCC</td>
+            <td>21.00</td>
+            <td>24.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <article id='Website Under Construction' style="text-align: center;">
       <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-      <img src='' alt='Website Under Construction' />
+      <img src='https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173_1280.png' style="width: 600px;"
+        alt='Website Under Construction'  />
     </article>
   </main>
 
@@ -378,7 +399,7 @@
     <div>&copy;
       <script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified
+      </script> Nhat Nguyen (s3765963), Khoa Tran (s3698991),  and Group Name: N&K. Last modified
       <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
     <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
       Programming course at RMIT University in Melbourne, Australia.</div>
@@ -388,4 +409,3 @@
 </body>
 
 </html>
-
