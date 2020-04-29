@@ -1,0 +1,223 @@
+/* Smoothing Scrolling */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#brand{
+    font: 80px Georgia, serif;
+}
+
+#title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(255, 252, 55);
+}
+
+#section {
+    color: rgb(248, 152, 7);
+}
+/* Parallax Scrolling Effect */
+.para {
+    
+    background-image: url(media/soon.jpg);
+    min-height: 680px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.paral{
+    
+    background-image: url(media/seat.png);
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    
+    background-image: url(media/Dolby.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.navbar {
+    background:rgb(252, 205, 134) !important;
+    border-style: dotted;
+    border-color: crimson;
+}
+.navbar-nav{
+    margin: auto;
+}
+.navbar .navbar-nav li a {
+    color:white !important;
+    
+}
+.navbar-toggler{
+    background-color: blanchedalmond !important;
+}
+
+#jumbotronlogo{
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    height: 1%;
+    
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: none;
+}
+
+.container > div {
+    padding-top: 30px;
+}
+
+#aboutus{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    background-color: blanchedalmond!important;
+}
+
+
+#nowshowing{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    background-color: blanchedalmond !important;
+}
+
+#prices {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    background-color: blanchedalmond !important;
+}
+
+#moviesection {
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.container #trailerbutton {
+    padding-left: 0%;
+    padding-right: 0%;
+    border-style: dotted;
+    border-width: thick;
+    border-color: crimson;
+    background-color: rgb(252, 205, 134) !important ;
+}
+
+
+#trailerbutton {
+    position: relative;
+    padding-bottom: 0%;
+}
+
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#ticketbutton {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+  
+  #trailerbutton:hover .image {
+    opacity: 0.5;
+}
+  
+  #trailerbutton:hover .middle {
+    opacity: 1;
+}
+
+  #trailerbutton:hover .rating {
+      opacity: 0.5
+  }
+
+#link:link, #link:visited {
+    background-color: rgb(255, 46, 46);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+#link:hover {
+    background-color: rgb(255,80,80);
+}
+
+#link:active {
+    background-color: rgb(255, 46, 46);
+}
+
+.rating {
+    position: absolute;
+    top: 0%;
+}
+
+#moviename {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+ #PriceTable td, #PriceTable th{
+    text-align: center;
+    padding-bottom: 1%;
+    margin: 0px auto;
+    width: 10%;
+    float: none;
+    font-size: 20px;
+ }
+#hotmovie{
+    text-align: center;
+    padding-bottom: 20%;
+    margin: 0px auto;
+    width: 60%;
+    float: none;
+    
+}
+#trailer{
+   margin: 0px auto;
+   width: 90%;
+}
+
+#poster {
+    width: 60%;
+
+}
+
