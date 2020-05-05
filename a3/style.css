@@ -112,6 +112,19 @@ html{
     background-color: blanchedalmond !important;
 }
 
+#bookingform{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    background-color: blanchedalmond !important;
+}
+#synopsis{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    background-color: blanchedalmond !important;
+}
+
 #moviesection {
     padding-bottom: 2%;
     padding-left: 2%;
@@ -190,7 +203,7 @@ html{
     top: 0%;
 }
 
-#moviename {
+.moviename {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
@@ -221,3 +234,27 @@ html{
 
 }
 
+input[pattern]:invalid{
+    border: 2px red solid;
+    background-color: #fee;
+}
+
+input:invalid {
+    border: 2px yellow solid;
+    background-color: #fff;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
