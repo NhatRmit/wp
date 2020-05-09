@@ -134,47 +134,50 @@ var prices = {
     full: { STA: 19.80, STP: 17.50, STC: 15.30, FCA: 30.00, FCP: 27.00, FCC: 24.00 }
 };
 
-function STA() {
-    var Qty = document.getElementById("seats-STA");
+var flag
+var dis = 0;
+var prices = {
+    full: { STA: 19.80, STP: 17.50, STC: 15.30, FCA: 30.00, FCP: 27.00, FCC: 24.00 }
+};
+
+function Priceupdate(){
+
+    var sta = document.getElementById("seats-STA").value;
+    var stp = document.getElementById("seats-STP").value;
+    var stc = document.getElementById("seats-STC").value;
+    var fca = document.getElementById("seats-FCA").value;
+    var fcp = document.getElementById("seats-FCP").value;
+    var fcc = document.getElementById("seats-FCC").value;
+
+    if(isNaN(sta))
+        sta = 0;
+    if(isNaN(stp))
+        stp = 0;
+    if(isNaN(stc))
+        stc = 0;
+    if(isNaN(fca))
+        fca = 0;
+    if(isNaN(fcp))
+        fcp = 0;
+    if(isNaN(fcc))
+        fcc = 0;
+    if(flag==1)
+        dis=0.2;
+    else
+        dis = 0;
     var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.STA;
+    var price = (1-dis)*(sta * prices.full.STA+ stp * prices.full.STP+ stc * prices.full.STC + fca * prices.full.FCA + fcp * prices.full.FCP + fcc * prices.full.FCC);
     Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
+}
+function discount(){
+    flag =1;
+    document.getElementById("discount").innerHTML= "* Discount 20% on weekday *";
+}
+function nondiscount(){
+    flag = 0;
+    document.getElementById("discount").innerHTML= "";
 }
 
-function STP() {
-    var Qty = document.getElementById("seats-STP");
-    var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.STP;
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
-}
-
-function STC() {
-    var Qty = document.getElementById("seats-STC");
-    var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.STC;
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
-}
-
-function FCA() {
-    var Qty = document.getElementById("seats-FCA");
-    var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.FCA;
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
-}
-
-function FCP() {
-    var Qty = document.getElementById("seats-FCP");
-    var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.FCP;
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
-}
-
-function FCC() {
-    var Qty = document.getElementById("seats-FCC");
-    var Subtotal = document.getElementById("subtotal");
-    var price = Qty.value * prices.full.FCC;
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
-}
 
 
 
