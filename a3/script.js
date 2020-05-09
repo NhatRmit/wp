@@ -13,32 +13,37 @@ function Order() {
 
 //Movie Title
 
-function moviePanelACT() {
+function moviePanelACT(book,synopsisACT) {
     var x = document.createElement("INPUT");
     x.setAttribute("type", "hidden");
     document.body.appendChild(x);
-    document.getElementById("demo").innerHTML = "Avengers";
+    document.getElementById("demo").innerHTML = "Avengers: Endgame";
+    document.getElementById(book).innerHTML = document.getElementById(synopsisACT).innerHTML;
+
 }
 
-function moviePanelRMC() {
+function moviePanelRMC(book,synopsisRMC) {
     var x = document.createElement("INPUT");
     x.setAttribute("type", "hidden");
     document.body.appendChild(x);
-    document.getElementById("demo").innerHTML = "Wedding";
+    document.getElementById("demo").innerHTML = "Top End Wedding";
+    document.getElementById(book).innerHTML = document.getElementById(synopsisRMC).innerHTML;
 }
 
-function moviePanelANM() {
+function moviePanelANM(book,synopsisANM) {
     var x = document.createElement("INPUT");
     x.setAttribute("type", "hidden");
     document.body.appendChild(x);
     document.getElementById("demo").innerHTML = "Dumbo";
+    document.getElementById(book).innerHTML = document.getElementById(synopsisANM).innerHTML;
 }
 
-function moviePanelAHF() {
+function moviePanelAHF(book,synopsisAHF) {
     var x = document.createElement("INPUT");
     x.setAttribute("type", "hidden");
     document.body.appendChild(x);
-    document.getElementById("demo").innerHTML = "Prince";
+    document.getElementById("demo").innerHTML = "The Happy Prince";
+    document.getElementById(book).innerHTML = document.getElementById(synopsisAHF).innerHTML;
 }
 
 //Movie Day
@@ -94,38 +99,32 @@ function movieSUN() {
 
 //Movie Time
 
-function movieT9(){
-    var y = document.createElement("INPUT");
-    y.setAttribute("type", "hidden");
-    document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "Time 9:00";
-}
 function movieT12() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "Time 12:00";
+    document.getElementById("demo2").innerHTML = "T12";
 }
 
 function movieT15() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "Time 15:00";
+    document.getElementById("demo2").innerHTML = "T15";
 }
 
 function movieT18() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "Time 18:00";
+    document.getElementById("demo2").innerHTML = "T18";
 }
 
 function movieT21() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "Time 21:00";
+    document.getElementById("demo2").innerHTML = "T21";
 }
 
 //Full Prices
@@ -165,9 +164,9 @@ function Priceupdate(){
         dis=0.2;
     else
         dis = 0;
-    var Subtotal = document.getElementById("subtotal");
+    var total = document.getElementById("total");
     var price = (1-dis)*(sta * prices.full.STA+ stp * prices.full.STP+ stc * prices.full.STC + fca * prices.full.FCA + fcp * prices.full.FCP + fcc * prices.full.FCC);
-    Subtotal.innerHTML = "Subtotal: $" + price.toFixed(2);
+    total.innerHTML = "total: $" + price.toFixed(2);
 }
 function discount(){
     flag =1;
@@ -179,9 +178,9 @@ function nondiscount(){
 }
 
 
-
-
-
+$(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+});
 
 
 

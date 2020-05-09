@@ -4,6 +4,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
 #brand{
     font: 80px Georgia, serif;
 }
@@ -62,10 +66,7 @@ html{
 .navbar-nav{
     margin: auto;
 }
-.navbar .navbar-nav li a {
-    color:white !important;
-    
-}
+
 .navbar-toggler{
     background-color: blanchedalmond !important;
 }
@@ -249,12 +250,23 @@ fieldset {
     margin-inline-start: 2px;
     margin-inline-end: 2px;
     padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
+    padding-inline-start: 10em;
+    padding-inline-end: 10em;
     padding-block-end: 0.625em;
-    min-inline-size: min-content;
     border-width: 2px;
-    border-style: groove;
-    border-color: threedface;
-    border-image: initial;
+    border-style: solid;
 }
+
+div>ul>li>a:hover {
+    background:rgb(238, 28, 28);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  div>ul>li>a:active {
+    background:rgb(185, 226, 36);
+     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+
+
