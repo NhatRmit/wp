@@ -323,15 +323,15 @@
             <tr>
               <th style="font-size: 20px;">Make a booking:</th>
               <td>
-                <div><input type="button" value="WED" onclick="movieWED();">
+                <div><input type="button" value="WED" onclick="movieWED();discount()">
                   <a href="#bookingform"><input type="button" value="9:00" onclick="movieT9();"></a></div>
-                <div><input type="button" value="THU" onclick="movieTHU();">
+                <div><input type="button" value="THU" onclick="movieTHU();discount()">
                   <a href="#bookingform"><input type="button" value="12:00" onclick="movieT12();"></a></div>
-                <div><input type="button" value="FRI" onclick="movieFRI();">
+                <div><input type="button" value="FRI" onclick="movieFRI();discount()">
                   <a href="#bookingform"><input type="button" value="15:00" onclick="movieT15();"></a></div>
-                <div><input type="button" value="SAT" onclick="movieSAT();">
+                <div><input type="button" value="SAT" onclick="movieSAT(); nondiscount()">
                   <a href="#bookingform"><input type="button" value="18:00" onclick="movieT18();"></a></div>
-                <div><input type="button" value="SUN" onclick="movieSUN();">
+                <div><input type="button" value="SUN" onclick="movieSUN(); nondiscount()">
                   <a href="#bookingform"><input type="button" value="21:00" onclick="movieT21();"></a></div>
                   <div><input type="button"  onclick="getDisc();">
                     <a href="#bookingform">Continue</a></div>
@@ -412,8 +412,9 @@
             <fieldset>
               <legend>Standard</legend>
               <label for="adults">Adults</label>
-              <select name="seats[STA]" id="seats-STA" onclick="STA()" >
+              <select name="seats[STA]" id="seats-STA" onclick="Priceupdate()" >
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -426,8 +427,9 @@
                 <option value="10">10</option>
               </select><br><br>
               <label for="concession">Concession</label>
-              <select name="seats[STP]" id="seats-STP" onclick="STP()">
+              <select name="seats[STP]" id="seats-STP" onclick="Priceupdate()"  >
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -440,8 +442,9 @@
                 <option value="10">10</option>
               </select><br><br>
               <label for="children">Children</label>
-              <select name="seats[STC]" id="seats-STC"onclick="STC()" >
+              <select name="seats[STC]" id="seats-STC" onclick="Priceupdate()" >
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -460,8 +463,9 @@
             <fieldset>
               <legend>First Class</legend>
               <label for="adults">Adults</label> 
-              <select name="seats[FCA]" id="seats-FCA" onclick="FCA()">
+              <select name="seats[FCA]" id="seats-FCA" onclick="Priceupdate()" >
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -474,8 +478,10 @@
                 <option value="10">10</option>
               </select><br><br>
               <label for="concession">Concession</label> 
-              <select name="seats[FCP]" id="seats-FCP" onclick="FCP()">
+              <select name="seats[FCP]" id="seats-FCP" onclick="Priceupdate()" >
+                
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -488,8 +494,9 @@
                 <option value="10">10</option>
               </select><br><br>
               <label for="children">Children</label> 
-              <select name="seats[FCC]" id="seats-FCC" onclick="FCC()">
+              <select name="seats[FCC]" id="seats-FCC" onclick="Priceupdate()" >
                 <option value="blank" selected disabled>Please Select</option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -539,6 +546,7 @@
           <p>
             <input type="submit" name="order" id="order" value="Order">
           </p>
+           <p name ="dis[count]" id = "discount" style="color: red;"></p>
 
 
           
