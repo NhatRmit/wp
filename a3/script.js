@@ -94,32 +94,38 @@ function movieSUN() {
 
 //Movie Time
 
+function movieT9(){
+    var y = document.createElement("INPUT");
+    y.setAttribute("type", "hidden");
+    document.body.appendChild(y);
+    document.getElementById("demo2").innerHTML = "Time 9:00";
+}
 function movieT12() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "T12";
+    document.getElementById("demo2").innerHTML = "Time 12:00";
 }
 
 function movieT15() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "T15";
+    document.getElementById("demo2").innerHTML = "Time 15:00";
 }
 
 function movieT18() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "T18";
+    document.getElementById("demo2").innerHTML = "Time 18:00";
 }
 
 function movieT21() {
     var y = document.createElement("INPUT");
     y.setAttribute("type", "hidden");
     document.body.appendChild(y);
-    document.getElementById("demo2").innerHTML = "T21";
+    document.getElementById("demo2").innerHTML = "Time 21:00";
 }
 
 //Full Prices
