@@ -564,15 +564,15 @@
               <td>
                 <p>Click the time to go to booking form</p>
                 <div><input type="button" value="WED">
-                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="09:00"></a></div>
                 <div><input type="button" value="THU">
-                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
                 <div><input type="button" value="FRI">
-                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="15:00"></a></div>
                 <div><input type="button" value="SAT">
-                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
                 <div><input type="button" value="SUN">
-                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
               </td>
             </tr>
           </table>
@@ -614,13 +614,13 @@
               <td>
                 <p>Click the time to go to booking form</p>
                 <div><input type="button" value="MON">
-                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
                 <div><input type="button" value="TUE">
-                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="15:00"></a></div>
                 <div><input type="button" value="SAT">
-                  <a href="#bookingform"><input type="button" value="15:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
                 <div><input type="button" value="SUN">
-                  <a href="#bookingform"><input type="button" value="15:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
               </td>
             </tr>
           </table>
@@ -661,19 +661,19 @@
               <td>
                 <p>Click the time to go to booking form</p>
                 <div><input type="button" value="MON">
-                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="09:00"></a></div>
                 <div><input type="button" value="TUE">
                   <a href="#bookingform"><input type="button" value="12:00"></a></div>
                 <div><input type="button" value="WED">
-                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="14:00"></a></div>
                 <div><input type="button" value="THU">
-                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="16:00"></a></div>
                 <div><input type="button" value="FRI">
                   <a href="#bookingform"><input type="button" value="18:00 "></a></div>
                 <div><input type="button" value="SAT">
-                  <a href="#bookingform"><input type="button" value="12:00 "></a></div>
+                  <a href="#bookingform"><input type="button" value="20:00 "></a></div>
                 <div><input type="button" value="SUN">
-                  <a href="#bookingform"><input type="button" value="12:00 "></a></div>
+                  <a href="#bookingform"><input type="button" value="22:00 "></a></div>
               </td>
             </tr>
           </table>
@@ -714,13 +714,13 @@
               <td>
                 <p>Click the time to go to booking form</p>
                 <div><input type="button" value="WED">
-                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="09:00"></a></div>
                 <div><input type="button" value="THU">
                   <a href="#bookingform"><input type="button" value="12:00"></a></div>
                 <div><input type="button" value="FRI">
-                  <a href="#bookingform"><input type="button" value="12:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="15:00"></a></div>
                 <div><input type="button" value="SAT">
-                  <a href="#bookingform"><input type="button" value="21:00"></a></div>
+                  <a href="#bookingform"><input type="button" value="18:00"></a></div>
                 <div><input type="button" value="SUN">
                   <a href="#bookingform"><input type="button" value="21:00"></a></div>
               </td>
