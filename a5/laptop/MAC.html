@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,142 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link id="stylecss" type="text/css" rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <title>MAC</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top ">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo-02.png" alt="Logo" style="width:40px;">
+            </a>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top justify-content-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar1" class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-pills">
+                <li id="navlink" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Phone">Phone</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="phone/Iphone.html">Iphone</a>
+                        <a class="dropdown-item" href="phone/Samsung.html">Samsung</a>
+                        <a class="dropdown-item" href="phone/Xiaomi.html">Xiaomi</a>
+                    </div>
+                </li>
+                <li id="navlink" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Laptop">Laptop</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">MAC</a>
+                        <a class="dropdown-item" href="#">Asus</a>
+                        <a class="dropdown-item" href="#">Acer</a>
+                    </div>
+                </li>
+                <li id="navlink" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Smartwatch">Smartwatch</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#AppleWatch">Apple Watch</a>
+                        <a class="dropdown-item" href="#Samsung">Samsung</a>
+                    </div>
+                </li>
+                <li id="navlink" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Tablet">Tablet</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#Ipad">Ipad</a>
+                        <a class="dropdown-item" href="#Samsung">Samsung</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="item-body">
+                        <h5 class="shop-item-name">Macbook Air 13 128GB</h5>
+                        <img class="shop-item-image" src="rsz_mac.png" alt="Card image">
+                        <br><span class="shop-item-price">$1099.99</span><br>
+                        <div class="btn">
+                            <button class="btn btn-warning shop-item-add" type="button">Add to cart </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="item-body">
+                        <p class="shop-item-description">
+                            Thông số kỹ thuật <br>
+                            CPU : Intel, Core i5 <br>
+                            RAM : 8 GB, LPDDR3 <br>
+                            Ổ cứng : SSD, 256 GB<br>
+                            Màn hình : 13.3 inchs, 2560 x 1600 Pixels<br>
+                            Card màn hình : Intel UHD Graphics 617, Tích hợp<br>
+                            Cổng kết nối : LAN : Không, WIFI : 802.11 a/b/g/n/ac<br>
+                            Hệ điều hành : Mac OS<br>
+                            Trọng lượng : 1.25 kg<br>
+                            Kích thước : Cao 0.41–1.56 cm x Rộng 30.41 cm x Sâu 21.24 cm<br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            <br><br>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>About Us</p>
+                    <p>Buying Q&A</p>
+                    <p>Online shopping tutorial</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Guarantee policy</p>
+                    <p>Changing policy</p>
+                    <p>Installment purchase</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Hotline: 09090909</p>
+                    <p>Shopping advice: 02020202</p>
+                    <p>Feedback(8am-20pm):01010101</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
